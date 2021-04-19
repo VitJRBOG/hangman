@@ -21,15 +21,16 @@ func AddLetter(index int, letter, wordField string) string {
 
 // DrawGallows строит виселицу из символов
 func DrawGallows() string {
-	gallowsImage := `------------
-                    ||          |
-                    ||
-                    ||
-                    ||
-                    ||
-                    ||
-                    /\
-                   /  \`
+	gallowsImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||\n" +
+		" ||\n" +
+		" ||\n" +
+		" ||\n" +
+		" ||\n" +
+		" /\\\n" +
+		"/  \\\n"
 	return gallowsImage
 }
 
@@ -55,84 +56,90 @@ func AddHangmanElement(mistakesNumber int) string {
 
 // addHangmanHead добавляет голову висельника
 func addHangmanHead() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||
-                    ||
-                    ||
-                    ||
-                    /\
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||\n" +
+		" ||\n" +
+		" ||\n" +
+		" ||\n" +
+		" /\\\n" +
+		"/  \\\n"
 	return hangmanImage
 }
 
 // addHangmanBody добавляет тело висельника
 func addHangmanBody() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||          |
-                    ||          |
-                    ||
-                    ||
-                    /\
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||          |\n" +
+		" ||          |\n" +
+		" ||\n" +
+		" ||\n" +
+		" /\\\n" +
+		"/  \\\n"
 	return hangmanImage
 }
 
 // addHangmanLeftHand добавляет левую руку висельника
 func addHangmanLeftHand() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||        / |
-                    ||       /  |
-                    ||
-                    ||
-                    /\
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||        / |\n" +
+		" ||       /  |\n" +
+		" ||\n" +
+		" ||\n" +
+		" /\\\n" +
+		"/  \\\n"
 	return hangmanImage
 }
 
 // addHangmanRightHand добавляет правую руку висельника
 func addHangmanRightHand() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||        / | \
-                    ||       /  |  \
-                    ||
-                    ||
-                    /\
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||        / | \\\n" +
+		" ||       /  |  \\\n" +
+		" ||\n" +
+		" ||\n" +
+		" /\\\n" +
+		"/  \\\n"
 	return hangmanImage
 }
 
 // addHangmanLeftLeg добавляет левую ногу висельника
 func addHangmanLeftLeg() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||        / | \
-                    ||       /  |  \
-                    ||         /
-                    ||        /
-                    /\       /
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||        / | \\\n" +
+		" ||       /  |  \\\n" +
+		" ||         /\n" +
+		" ||        /\n" +
+		" /\\       /\n" +
+		"/  \\\n"
 	return hangmanImage
 }
 
 // addHangmanRightLeg добавляет правую ногу висельника
 func addHangmanRightLeg() string {
-	hangmanImage := `------------
-                    ||          |
-                    ||         { }
-                    ||        / | \
-                    ||       /  |  \
-                    ||         / \
-                    ||        /   \
-                    /\       /     \
-                   /  \`
+	hangmanImage := "\n" +
+		"  ------------\n" +
+		" ||          |\n" +
+		" ||         { }\n" +
+		" ||        / | \\\n" +
+		" ||       /  |  \\\n" +
+		" ||         / \\\n" +
+		" ||        /   \\\n" +
+		" /\\       /     \\\n" +
+		"/  \\\n"
 	return hangmanImage
 }
