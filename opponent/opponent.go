@@ -1,7 +1,9 @@
 package opponent
 
 import (
+	"math/rand"
 	"strings"
+	"time"
 
 	"bitbucket.org/VitJRBOG/hangman/tools"
 )
@@ -22,7 +24,7 @@ func GetWord() string {
 // selectWord выбирает слово из списка
 func selectWord(wordsLine string) string {
 	words := convertLineToList(wordsLine)
-	wordNumber := randomizeNumber()
+	wordNumber := randomizeNumber(len(words))
 	return words[wordNumber]
 }
 
@@ -31,8 +33,9 @@ func convertLineToList(wordsLine string) []string {
 	return strings.Split(wordsLine, "\n")
 }
 
-// randomizeNumber генерирует случайное число
-func randomizeNumber() int {
-	// TODO: описать функцию
-	return 0
+// randomizeNumber возвращает псевдослучайное число от 0 до n
+func randomizeNumber(n int) int {
+	rand.Seed(time.Now().UTC().UnixNano())
+	number := rand.Intn(n)
+	return number
 }
