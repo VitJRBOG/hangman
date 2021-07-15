@@ -1,3 +1,3 @@
-module bitbucket.org/VitJRBOG/hangman
+module github.com/VitJRBOG/hangman
 
 go 1.16

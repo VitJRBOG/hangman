@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"bitbucket.org/VitJRBOG/hangman/tools"
+	"github.com/VitJRBOG/hangman/tools"
 )
 
 // GetWord "загадывает" слово

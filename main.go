@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"bitbucket.org/VitJRBOG/hangman/opponent"
-	"bitbucket.org/VitJRBOG/hangman/playground"
+	"github.com/VitJRBOG/hangman/opponent"
+	"github.com/VitJRBOG/hangman/playground"
 )
 
 func main() {

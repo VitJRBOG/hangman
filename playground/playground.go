@@ -3,9 +3,9 @@ package playground
 import (
 	"fmt"
 
-	"bitbucket.org/VitJRBOG/hangman/judgeman"
-	"bitbucket.org/VitJRBOG/hangman/painter"
-	"bitbucket.org/VitJRBOG/hangman/tools"
+	"github.com/VitJRBOG/hangman/judgeman"
+	"github.com/VitJRBOG/hangman/painter"
+	"github.com/VitJRBOG/hangman/tools"
 )
 
 func PreparingPlayground(word string) (string, string) {
